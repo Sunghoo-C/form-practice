@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <h1>Create An Account</h1>
+    <link rel="stylesheet" href="style.css" />
+    <title>Create An Account</title>
   </head>
   <body>
-    <form>
+    <h1>Create An Account</h1>
+    <form action="#" method="get">
       <div>
         <label for="first_name">first name</label>
-        <input id="first_name" required placeholder="first_name" />
+        <input id="first_name" type="text" required placeholder="first_name" />
       </div>
       <div>
         <label for="last_name">last name</label>
-        <input id="last_name" required placeholder="last_name" />
+        <input id="last_name" type="text" required placeholder="last_name" />
       </div>
       <div>
         <label for="Email">Email</label>
-        <input id="Email" required placeholder="Email" />
+        <input id="Email" type="email" required placeholder="Email" />
       </div>
       <div>
         <label for="Username">Username</label>
-        <input id="Username" required placeholder="Username" />
+        <input id="Username" type="text" required placeholder="Username" />
       </div>
       <div>
         <label for="Password">Password</label>
-        <input id="Password" required placeholder="Password" minlength="10" />
+        <input
+          id="Password"
+          type="password"
+          required
+          placeholder="Password"
+          minlength="10"
+        />
       </div>
       <div>
         <label for="Birth_day">Birth day</label>
         <input id="Birth_day" required placeholder="name" type="date" />
       </div>
       <div>
-        <label for="How_happy_are_you?">How happy are you?</label>
+        <label for="input_range">How happy are you?</label>
         <input
           type="range"
           id="volume"
           name="volume"
           min="0"
-          max="11 id="
-          How_happy_are_you?
+          max="11"
+          id="input_range"
           required
-          placeholder=""
         />
       </div>
       <div>
-        <label for="What_is_your_fav._color?">What is your fav. color?</label>
-        <input
-          id="What_is_your_fav._color?"
-          required
-          placeholder="color"
-          type="color"
-        />
+        <label for="input_color">What is your fav. color?</label>
+        <input id="input_color" required type="color" />
       </div>
       <input type="submit" value="Create account" />
     </form>

@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+}
+
+form {
+    margin: 0 auto 100px;
+    padding: 30px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+form div {
+    padding: 0 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form label {
+    width: 130px;
+    display: inline-block;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+form label+input {
+    width: 250px;
+    display: inline-block;
+}
+
+form input[type="submit"] {
+    display: block;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 10px;
+    width: 100%;
+    margin: 20px auto 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form label+input[type="text"],
+form label+input[type="email"],
+form label+input[type="password"],
+form label+input[type="date"] {padding: 5px;}
