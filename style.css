@@ -23,7 +23,9 @@ form label {
     text-align: left;
     text-transform: capitalize;
 }
-
+form .required_point{
+    color:red;
+}
 form label+input {
     width: 250px;
     display: inline-block;
